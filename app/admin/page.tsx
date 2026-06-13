@@ -12,8 +12,8 @@ export default function AdminPage() {
   const [showPass, setShowPass] = useState(false);
   const [error, setError] = useState("");
   const [tab, setTab] = useState("products");
-  const [products, setProducts] = useState([]);
-  const [messages, setMessages] = useState([]);
+  const [products, setProducts] = useState<any[]>([]);
+  const [messages, setMessages] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ name:"", description:"", price:"", category:"desktops", image_url:"", in_stock:true });
 
